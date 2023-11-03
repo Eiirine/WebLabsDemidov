@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #31506a;
+    transition: background-color 0.5s;
+  }
+  .container {
+    width: 75%;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .big-title {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .big-title span:nth-child(odd) {
+    color: #31506a;
+  }
+  .big-title span:nth-child(even) {
+    color: #008ccb;
+  }
+  ul {
+    list-style-type: disc;
+    padding: 0;
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    /* margin-right: 30px; */
+    margin-bottom: 10px;
+    width: 1006px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #31506a;
+  }
+  ul li:hover {
+    border: 2px solid #31506a;
+  }
+  .markers li::marker {
+	color: #31506a;
+	font-size: 18px;
+}
+  ol {
+    text-align: start;
+    border: 2px solid #008ccb;
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 50px;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  ol li:hover {
+    background-color: #008ccb;
+  }
+  .news-image {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s;
+    border-radius: 15px;
+  }
+  .news-image:hover {
+    background-image: url('https://storage.myseldon.com/news-pict-29/29B71E9FC46AE5759EF76509A4EEF322');
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .highlight {
+    background-color: #008ccb;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  .form{
+    text-align: center;
+    border: 2px solid #008ccb;
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 50px;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .calculator {
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    border: 2px solid #008ccb;
+    border-radius: 5px;
+  }
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+  } 
+  .result {
+    text-align: center;
+    margin: 10px 0;
+  }
+  button {
+    padding: 10px;
+    width: 45%;
+    margin: 10px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+}
+#timerOutput, #countdownOutput {
+    margin-top: 20px;
+  }
+  
+  .countdown-form {
+    margin-top: 10px;
+  }
+
+  #menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu > li {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    list-style-type: disc;
+    padding: 10px;
+    position: absolute; /* чтобы подменю не расширяло родительский элемент */
+    width: 100%; /* ширина подменю равна ширине кнопки */
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.337); /* небольшая тень для визуального разделения */
+    z-index: 1; /* чтобы подменю было над другими элементами */
+}
+
+.sub-menu li {
+    background-color: #f9f9f9;
+    min-width: 100px; /* минимальная ширина подменю */
+}
+
+.sub-menu li:hover {
+    background-color: #f1f1f1;
+}

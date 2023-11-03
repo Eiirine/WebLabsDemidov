@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Новости</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+  <h1 class="big-title">
+    <span>П</span><span>о</span><span>с</span><span>л</span><span>е</span><span>д</span><span>н</span><span>и</span><span>е</span> <span>н</span><span>о</span><span>в</span><span>о</span><span>с</span><span>т</span><span>и</span> <span>I</span><span>T</span>
+  </h1>
+  <div id="timerOutput">Вы на странице: 0 секунд</div>
+  
+  <div class="news-image" style="background-image: url('https://u.9111s.ru/uploads/202112/24/2fdc41e4f1c013826d43129107a1f6a4.jpg');" onclick="window.location='https://digital.gov.ru/ru/';"></div>
+  <ul class="markers">
+    <li>Технология блокчейн</li>
+    <li>Искусственный интеллект</li>
+    <li>Квантовые вычисления</li>
+  </ul>
+  
+  <ol>
+    <li>Рост инвестиций в сферу ИТ</li>
+    <li>Развитие 5G сетей</li>
+    <li>Усиление кибербезопасности</li>
+  </ol>
+
+<div class="form">
+  <form id="newsForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Ваш email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="title">Заголовок новости:</label>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="description">Описание новости:</label>
+    <textarea id="description" name="description" required></textarea><br><br>
+
+    <button type="submit">Отправить новость</button>
+</form>
+</div>
+
+<div class="calculator">
+    <input type="number" id="number1" placeholder="Введите первое число">
+    <input type="number" id="number2" placeholder="Введите второе число">
+    <div class="operations">
+      <button onclick="calculate('add')">Сложение</button>
+      <button onclick="calculate('subtract')">Вычитание</button>
+      <button onclick="calculate('multiply')">Умножение</button>
+      <button onclick="calculate('divide')">Деление</button>
+      <button onclick="calculate('power')">Возведение в степень</button>
+      <button onclick="calculate('sqrt')">Квадратный корень</button>
+      <button onclick="calculate('cosh')">Cosh</button>
+    </div>
+    <div class="result" id="result"></div>
+  </div>
+
+<h3>Обратный отсчет</h3>
+<div class="countdown-form">
+  <input type="datetime-local" id="targetDate">
+  <button onclick="startCountdown()">Начать отсчет</button>
+  <div id="countdownOutput"></div>
+</div>
+
+<h3>Бегущие буквы</h3>
+<div class="row justify-content-around text-center">
+  <div class="col-3">
+  <input class="form-control form-control-lg text-center" type="text" id="inputField" placeholder="Введите текст, и в нем будет меняться регистр">
+  <p id="output"></p>
+  <button class="btn btn-secondary" onclick="startAnimation()">Начать анимацию</button>
+  </div>
+</div>
+
+<ul id="menu">
+  <li>
+      <button onclick="toggleSubMenu('sub-menu1')">Пункт 1</button>
+      <ul id="sub-menu1" class="sub-menu">
+          <li>Подпункт 1.1</li>
+          <li>Подпункт 1.2</li>
+      </ul>
+  </li>
+  <li>
+      <button onclick="toggleSubMenu('sub-menu2')">Пункт 2</button>
+      <ul id="sub-menu2" class="sub-menu">
+          <li>Подпункт 2.1</li>
+          <li>Подпункт 2.2</li>
+      </ul>
+  </li>
+</ul>
+
+  <p class="footer">Читайте больше новостей на <a href="//digital.gov.ru/ru/!">нашем сайте</a>!</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
